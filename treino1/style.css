@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+
+position: relative;
+
+
+}
+
+.img{
+
+    position: absolute;
+    top: -75px;
+    z-index: -1;
+    left: 18px;
+}
+
+.crp{
+
+    width: 180px;
+    height: 200px;
+    border: 10px solid yellowgreen;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+.crp2{
+    display: flex;
+    position: relative;
+    width: 150px;
+    height: 175px;
+    border: 10px solid yellowgreen;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.sub{
+position: absolute;
+width: 150px;
+height: 175px;
+border-radius: 50%;
+overflow: hidden;
+}
+
+
+.subcrp{
+    position: absolute;
+    transform: rotate(-48deg);
+    width: 50px;
+    height: 259px;
+    background-color: blue;
+    z-index: -1;
+    top: -57px;
+}
+
+.crp2::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 73.5px;
+    background-color: yellowgreen;
+    top: 6px;
+    left: 34px;
+    transform: rotateZ(132deg);
+}
+
+.crp2::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 74.5px;
+    background-color: yellowgreen;
+    top: 7px;
+    left: 84px;
+    transform: rotateZ(50deg);
+}
+.crp3{
+
+    width: 99px;
+    height:99px;
+    border: 10px solid yellowgreen;
+    border-radius: 50%;
+    border-right: 4px solid transparent;
+
+}
+
+.crp4{
+    position: absolute;
+    bottom: 13px;
+    left: 55px;
+    width: 9px;
+    height: 58px;
+    background-color: yellowgreen;
+}
+.crp4::before{
+content: '';
+position: absolute;
+top: 0px;
+left: 0px;
+width: 21px;
+height: 8px;
+background-color: yellowgreen;
+}
+
+.crp4::after {
+content: '';
+position: absolute;
+top: 16px;
+left: 0px;
+width: 21px;
+height: 7px;
+background-color: yellowgreen;
