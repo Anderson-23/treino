@@ -15,7 +15,6 @@ html,body{
 
 position: relative;
 
-
 }
 
 .img{
@@ -36,8 +35,6 @@ position: relative;
     justify-content: center;
     align-items: center;
     
-
-
 }
 .crp2{
     display: flex;
@@ -50,7 +47,7 @@ position: relative;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
- 
+
 }
 
 .sub{
@@ -60,7 +57,6 @@ height: 175px;
 border-radius: 50%;
 overflow: hidden;
 }
-
 
 .subcrp{
     position: absolute;
@@ -112,20 +108,21 @@ overflow: hidden;
     background-color: yellowgreen;
 }
 .crp4::before{
-content: '';
-position: absolute;
-top: 0px;
-left: 0px;
-width: 21px;
-height: 8px;
-background-color: yellowgreen;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 21px;
+    height: 8px;
+    background-color: yellowgreen;
 }
 
 .crp4::after {
-content: '';
-position: absolute;
-top: 16px;
-left: 0px;
-width: 21px;
-height: 7px;
-background-color: yellowgreen;
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    width: 21px;
+    height: 7px;
+    background-color: yellowgreen;
+}
