@@ -48,14 +48,15 @@ position: relative;
     justify-content: center;
     align-items: center;
 
+
 }
 
 .sub{
-position: absolute;
-width: 150px;
-height: 175px;
-border-radius: 50%;
-overflow: hidden;
+    position: absolute;
+    width: 150px;
+    height: 175px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .subcrp{
