@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+
+    min-height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame{
+
+    width: 500px;
+    height: 400px;
+    background-image: url(imagens/ceu-estrelado.webp);
+    position: relative;
+    background-size: cover;
+    background-size: 200% 100%;
+    background-repeat: repeat-x;
+    animation: pisoMov2 8s infinite linear reverse;
+}
+
+.ceu{
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    background-image: url(imagens/nuvem.png);
+    background-repeat: no-repeat;
+    background-size:25% 100%;
+    top: 0;  
+    animation: ceu 3s infinite linear; 
+}
+.ceu2{
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    background-image: url(imagens/nuvem.png);
+    background-repeat: no-repeat;
+    background-size:25% 100%;
+    top: 55PX;  
+    animation: ceu 4s infinite linear; 
+}
+.ceu3{
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    background-image: url(imagens/nuvem.png);
+    background-repeat: no-repeat;
+    background-size:25% 100%;
+    top: 25PX;  
+    animation: ceu 5s infinite linear; 
+}
+.ceu4{
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    perspective: 800px;
+    background-image: url(imagens/lua.webp);
+    background-repeat: no-repeat;
+    background-size:15% 100%;
+    top: 25PX;  
+    animation: ceu 8s infinite linear; 
+}
+@keyframes ceu {  
+    100%{
+        background-position-x: -100%;
+    }
+    0%{
+        background-position-x: 150%;
+    }
+}
+.piso{
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    background-image: url(imagens/terreno.jpg);
+    background-repeat: repeat-x;
+    background-size:50% 100%;
+    bottom: 0;  
+    animation: pisoMov 900ms infinite linear; 
+}
+@keyframes pisoMov2 {  
+    100%{
+        background-position-x: -50%;
+    }
+    0%{
+        background-position-x: 150%;
+    }
+}
+
+@keyframes pisoMov {  
+    100%{
+        background-position-x: 0%;
+    }
+    0%{
+        background-position-x: 100%;
+    }
+}
+
+.person{
+
+    width: 100px;
+    height: 27px;
+    background-color: red;
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    border-radius: 62% 116% 0% 31%;
+    border: 3px solid black;
+}
+
+.paralama1{
+
+    background-image: none;
+    background-color: blue;
+    width: 20px;
+    height: 15px;
+    box-shadow: 0px 1px 1px black;
+    z-index: 1;
+    animation: none;
+    border-radius: 50% 50% 0% 0%;
+    top: 47%;
+    left: 10%;
+}
+.paralama2{
+    background-image: none;
+    background-color: blue;
+    width: 20px;
+    height: 15px;
+    box-shadow: 0px 1px 1px black;
+    z-index: 1;
+    animation: none;
+    border-radius: 50% 50% 0% 0%;
+    top: 47%;
+    left: 65%;
+}
+
+label{
+    content:'';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    background-image: radial-gradient(black,red,blue);
+    border-radius: 50px;
+    overflow: hidden;
+
+    animation: playerRoda 1.5s infinite linear;
+
+}
+.lab1{
+    top: 49%;
+    left: 10%;
+}
+.lab1::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 25px;
+    background-color: black;
+    TRANSFORM: TRANSLATE(-50%,-50%);
+    
+}
+.lab1::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 25px;
+    background-color: black;
+    transform: translate(-50%,-50%) rotate(90deg);
+}
+
+.lab2::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 25px;
+    background-color: black;
+    TRANSFORM: TRANSLATE(-50%,-50%); 
+}
+.lab2::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 25px;
+    background-color: black;
+    transform: translate(-50%,-50%) rotate(90deg);
+}
+.lab2{
+    top: 49%;
+    left: 65%;
+}
+
+
+@keyframes playerRoda {
+
+    to{
+
+        transform: rotate(360deg);
+
+
+    }
+  
+    
+}
+
+
+@keyframes playerpulo {
+    0%{
+        transform: translateY(0PX);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(0px);
+    } 
+}
+.pula{
+    animation: playerpulo 800ms linear;
+}
