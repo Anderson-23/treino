@@ -23,8 +23,12 @@ html,body{
     background-size: 200% 100%;
     background-repeat: repeat-x;
     animation: pisoMov2 8s infinite linear reverse;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 8px solid black;
+    box-shadow: 5px 5px 5px black
 }
-
+ 
 .ceu{
     position: absolute;
     width: 100%;
@@ -62,7 +66,7 @@ html,body{
     perspective: 800px;
     background-image: url(imagens/lua.webp);
     background-repeat: no-repeat;
-    background-size:15% 100%;
+    background-size:15% 100%;  
     top: 25PX;  
     animation: ceu 8s infinite linear; 
 }
@@ -112,6 +116,7 @@ html,body{
     left: 50px;
     border-radius: 62% 116% 0% 31%;
     border: 3px solid black;
+    
 }
 
 .paralama1{
@@ -223,7 +228,7 @@ label{
         transform: translateY(0PX);
     }
     50%{
-        transform: translateY(-25px);
+        transform: translateY(-40px);
     }
     100%{
         transform: translateY(0px);
